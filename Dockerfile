@@ -20,5 +20,5 @@ RUN apt-get update \
 # Rserve allows Spark to communicate with a local R process to run R code
 RUN R -e "install.packages('hwriterPlus', repos='https://mran.revolutionanalytics.com/snapshot/2017-02-26')" \
  && R -e "install.packages('Rserve', repos='http://rforge.net/')" \
- && R -e "install.packages('ggplot2', repos='https://cran.microsoft.com/snapshot/2015-12-19/')"
+ && R -e "install.packages('ggplot2', repos='https://mran.revolutionanalytics.com/snapshot/2017-02-26')"
 
